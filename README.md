@@ -1,10 +1,10 @@
-## Using CDK to exemplify how to provide AWS components using Typescript
+## CDK Demo
 
-### This basic example makes use of event arch to start a lambda function when a file is created or updated in a s3 bucket as shown in the diagram bellow.
+### Use of CDK with Typescript to exemplify how to provide AWS components. This basic example is event-driven architecture and shows the starting of a lambda function when a file is created or in an s3 bucket as shown in the diagram below.
 
 
 ---
-## Used components:
+### Used services:
 - S3
 - SNS
 - SQS
