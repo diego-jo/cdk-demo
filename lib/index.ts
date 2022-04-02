@@ -23,7 +23,7 @@ export class DemoAppStack extends Stack {
     const { demoTopic } = new App1SNS(this)
     const { demoLambda } = new App1Lambda(this)
 
-    demoBucket.addEventNotification(EventType.OBJECT_CREATED_PUT, new s3n.SnsDestination(demoTopic))
+    demoBucket.addEventNotification(EventType.OBJECT_CREATED, new s3n.SnsDestination(demoTopic))
     demoTopic.addSubscription(new snsSub.SqsSubscription(demoQueue))
     demoLambda.addEventSource(new lambdaEventSource.SqsEventSource(demoQueue, {
       batchSize: 1,
