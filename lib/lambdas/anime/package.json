@@ -1,0 +1,16 @@
+{
+    "name": "lambda-sample",
+    "version": "1.0.0",
+    "description": "just a sample",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "build": "zip -r lambda-sample.zip lib node_modules package.json"
+    },
+    "author": "me",
+    "license": "ISC",
+    "dependencies": {
+        "got": "^12.0.1"
+    }
+}
