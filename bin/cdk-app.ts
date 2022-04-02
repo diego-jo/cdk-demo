@@ -4,4 +4,4 @@ import * as cdk from 'aws-cdk-lib';
 import { DemoAppStack } from '../lib';
 
 const app = new cdk.App();
-new DemoAppStack(app, 'unico-infra-base', {});
+new DemoAppStack(app, 'unico-infra-base');
