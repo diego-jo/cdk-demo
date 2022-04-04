@@ -6,9 +6,9 @@ export class App1S3 {
   public readonly demoBucket: s3.Bucket
 
   constructor(scope: Construct) {
-    this.demoBucket = new s3.Bucket(scope, 'demo-store', {
+    this.demoBucket = new s3.Bucket(scope, 'demo-store-bck', {
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
-      bucketName: 'demo-store',
+      bucketName: 'demo-store-bck',
       accessControl: s3.BucketAccessControl.PRIVATE
     })
 
