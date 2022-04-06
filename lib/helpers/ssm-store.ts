@@ -1,8 +1,8 @@
 import * as ssm from 'aws-cdk-lib/aws-ssm'
-import { Construct } from 'constructs';
+import { Construct } from 'constructs'
 
 export class SSMStore {
-  constructor(
+  constructor (
     scope: Construct,
     parameterName: string,
     parameterValue: string,
